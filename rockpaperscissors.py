@@ -1,8 +1,12 @@
-
+import random
 
 print("Welcome to the kitty cat dome of doom!!! \n....................\nPlay a game of purrrrfect game of rock paper scissors and defeat King Kitty!")
 player1 = input("Enter Player 1's choice: ")
-kittycat = input("Enter Player 2's choice: ")
+kittycat = random.choice(["rock","paper","scissors"])
+
+print("Let the games begin!")
+print("Player 1 chose " + player1 + "!!")
+print("Kitty chose " + kittycat + "!!")
 
 if player1 == kittycat:
     print("What will King Kitty do, it's a tie??!!!")
